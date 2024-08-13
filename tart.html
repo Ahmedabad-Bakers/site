@@ -37,6 +37,39 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+
+    <link href="css/style_cake_page.css" rel="stylesheet" />
+
+    <!-- Cakes CSS and Javascript added -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+
+    <!--owl slider stylesheet -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <!-- nice select  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+      integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ=="
+      crossorigin="anonymous"
+    />
+    <!-- font awesome style -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+    <!-- Cakes CSS and Javascript ended -->
+
+    <!-- Modal changes start here -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main_modal.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style_modal.css" />
+    <!-- modal changes end here -->
   </head>
 
   <body>
@@ -127,7 +160,7 @@
 
           <a href="product.html" class="nav-item nav-link h3">Products</a>
 
-          <a href="contact.html" class="nav-item nav-link active h3">Contact</a>
+          <a href="contact.html" class="nav-item nav-link h3">Contact</a>
         </div>
         <div class="d-none d-lg-flex">
           <div
@@ -149,134 +182,281 @@
       class="container-fluid page-header py-6 wow fadeIn"
       data-wow-delay="0.1s"
     >
-      <div class="container text-center pt-5 pb-3">
-        <h1 class="display-4 text-white animated slideInDown mb-3">
-          Contact Us
-        </h1>
+      <!-- <div class="container text-center pt-5 pb-3">
+        <h1 class="display-4 text-white animated slideInDown mb-3">&nbsp</h1>
         <nav aria-label="breadcrumb animated slideInDown">
-          <ol class="breadcrumb justify-content-center mb-0">
+          <ol
+            class="breadcrumb justify-content-center mb-0"
+            style="display: none"
+          >
             <li class="breadcrumb-item">
-              <a class="text-white" href="#">Home</a>
+              <a class="text-white" href="#">&nbsp</a>
             </li>
             <li class="breadcrumb-item">
-              <a class="text-white" href="#">Pages</a>
+              <a class="text-white" href="#">&nbsp</a>
             </li>
             <li class="breadcrumb-item text-primary active" aria-current="page">
-              Contact
+              &nbsp
             </li>
           </ol>
         </nav>
-      </div>
+      </div> -->
     </div>
     <!-- Page Header End -->
 
-    <!-- Contact Start -->
-    <div class="container-xxl py-6">
+    <!-- Cakes Page Start -->
+
+    <section
+      style="padding: 0px; margin-top: -50px"
+      class="food_section layout_padding"
+    >
       <div class="container">
-        <div
-          class="text-center mx-auto mb-5 wow fadeInUp"
-          data-wow-delay="0.1s"
-          style="max-width: 500px"
-        >
-          <!-- <p class="text-primary text-uppercase mb-2">// Contact Us</p> -->
-          <h1 class="display-6 mb-4">
-            If You Have Any Query, Please Contact Us
+        <div class="hero">
+          <h1
+            class="text-primary"
+            style="font-size: 4em; color: #7b4718 !important"
+          >
+            Tart
           </h1>
+          <hr />
         </div>
-        <div class="row g-0 justify-content-center">
-          <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
-            <!-- <p class="text-center mb-4">
-              The contact form is currently inactive. Get a functional and
-              working contact form with Ajax & PHP in a few minutes. Just copy
-              and paste the files, add a little code and you're done.
-              <a href="https://htmlcodex.com/contact-form">Download Now</a>.
-            </p> -->
-            <form>
-              <div class="row g-3">
-                <div class="col-md-6">
-                  <div class="form-floating">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="name"
-                      placeholder="Your Name"
+
+        <!-- <div class="heading_container heading_center">
+          <h2>Our Menu</h2>
+        </div> -->
+
+        <!-- <ul class="filters_menu">
+          <li class="active" data-filter="*">All</li>
+          <li data-filter=".burger">Burger</li>
+          <li data-filter=".pizza">Pizza</li>
+          <li data-filter=".pasta">Pasta</li>
+          <li data-filter=".fries">Fries</li>
+        </ul> -->
+
+        <div class="filters-content">
+          <div class="row grid">
+            <!-- cake product start here -->
+
+            <div class="col-sm-6 col-lg-4 all pizza">
+              <div class="box">
+                <div>
+                  <div class="img-box" style="height: 300px">
+                    <img
+                      class="gallery-item"
+                      src="img/cakes/white-forest-cake.jpg"
+                      alt="Chocolate Caramel Tart"
+                      style="min-height: 100%; width: 100% !important"
                     />
-                    <label for="name">Your Name</label>
                   </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-floating">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="contact_number"
-                      placeholder="Your Contact No."
-                    />
-                    <label for="email">Contact No.</label>
+                  <div class="detail-box">
+                    <h5 style="color: white">Chocolate Caramel Tart</h5>
+                    <p style="min-height: 66px">description</p>
+                    <p style="font-size: larger">80 ₹ / Pc</p>
                   </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-floating">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="subject"
-                      placeholder="Subject"
-                    />
-                    <label for="subject">Subject</label>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-floating">
-                    <textarea
-                      class="form-control"
-                      placeholder="Leave a message here"
-                      id="message"
-                      style="height: 200px"
-                    ></textarea>
-                    <label for="message">Message</label>
-                  </div>
-                </div>
-                <div class="col-12 text-center">
-                  <button
-                    class="btn btn-primary rounded-pill py-3 px-5"
-                    type="submit"
-                  >
-                    Send Message
-                  </button>
                 </div>
               </div>
-            </form>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 all pizza">
+              <div class="box">
+                <div>
+                  <div class="img-box" style="height: 300px">
+                    <img
+                      class="gallery-item"
+                      src="img/cakes/black-forest-cake.jpg"
+                      style="min-height: 100%; width: 100% !important"
+                      alt="Rasmalai Tart"
+                    />
+                  </div>
+                  <div class="detail-box">
+                    <h5 style="color: white">Rasmalai Tart</h5>
+                    <p>
+                      Veniam debitis quaerat officiis quasi cupiditate quo,
+                      quisquam velit, magnam voluptatem repellendus sed eaque
+                    </p>
+                    <p style="font-size: larger">90 ₹ / Pc</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 all pizza">
+              <div class="box">
+                <div>
+                  <div class="img-box" style="height: 300px">
+                    <img
+                      class="gallery-item"
+                      src="img/cakes/belgium-truffle-cake.jpg"
+                      style="min-height: 100%; width: 100% !important"
+                      alt="Mango Swirl Tart"
+                    />
+                  </div>
+                  <div class="detail-box">
+                    <h5 style="color: white">Mango Swirl Tart</h5>
+                    <p>
+                      Veniam debitis quaerat officiis quasi cupiditate quo,
+                      quisquam velit, magnam voluptatem repellendus sed eaque
+                    </p>
+
+                    <p style="font-size: larger">80 ₹ / Pc</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 all pizza">
+              <div class="box">
+                <div>
+                  <div class="img-box" style="height: 300px">
+                    <img
+                      class="gallery-item"
+                      src="img/cakes/belgium-truffle-cake.jpg"
+                      style="min-height: 100%; width: 100% !important"
+                      alt="Cream Cheese Strawberry Tart"
+                    />
+                  </div>
+                  <div class="detail-box">
+                    <h5 style="color: white">Cream Cheese Strawberry Tart</h5>
+                    <p>
+                      Veniam debitis quaerat officiis quasi cupiditate quo,
+                      quisquam velit, magnam voluptatem repellendus sed eaque
+                    </p>
+
+                    <p style="font-size: larger">90 ₹ / Pc</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 all pizza">
+              <div class="box">
+                <div>
+                  <div class="img-box" style="height: 300px">
+                    <img
+                      class="gallery-item"
+                      src="img/cakes/belgium-truffle-cake.jpg"
+                      style="min-height: 100%; width: 100% !important"
+                      alt="Hazelnut Nutella Tart"
+                    />
+                  </div>
+                  <div class="detail-box">
+                    <h5 style="color: white">Hazelnut Nutella Tart</h5>
+                    <p>
+                      Veniam debitis quaerat officiis quasi cupiditate quo,
+                      quisquam velit, magnam voluptatem repellendus sed eaque
+                    </p>
+
+                    <p style="font-size: larger">100 ₹ / Pc</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 all pizza">
+              <div class="box">
+                <div>
+                  <div class="img-box" style="height: 300px">
+                    <img
+                      class="gallery-item"
+                      src="img/cakes/belgium-truffle-cake.jpg"
+                      style="min-height: 100%; width: 100% !important"
+                      alt="Biscoff Tart"
+                    />
+                  </div>
+                  <div class="detail-box">
+                    <h5 style="color: white">Biscoff Tart</h5>
+                    <p>
+                      Veniam debitis quaerat officiis quasi cupiditate quo,
+                      quisquam velit, magnam voluptatem repellendus sed eaque
+                    </p>
+
+                    <p style="font-size: larger">100 ₹ / Pc</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 all pizza">
+              <div class="box">
+                <div>
+                  <div class="img-box" style="height: 300px">
+                    <img
+                      class="gallery-item"
+                      src="img/cakes/belgium-truffle-cake.jpg"
+                      style="min-height: 100%; width: 100% !important"
+                      alt="Fruit Tart"
+                    />
+                  </div>
+                  <div class="detail-box">
+                    <h5 style="color: white">Fruit Tart</h5>
+                    <p>
+                      Veniam debitis quaerat officiis quasi cupiditate quo,
+                      quisquam velit, magnam voluptatem repellendus sed eaque
+                    </p>
+
+                    <p style="font-size: larger">90 ₹ / Pc</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 all pizza">
+              <div class="box">
+                <div>
+                  <div class="img-box" style="height: 300px">
+                    <img
+                      class="gallery-item"
+                      src="img/cakes/belgium-truffle-cake.jpg"
+                      style="min-height: 100%; width: 100% !important"
+                      alt="Cashew Blueberry Tart"
+                    />
+                  </div>
+                  <div class="detail-box">
+                    <h5 style="color: white">Cashew Blueberry Tart</h5>
+                    <p>
+                      Veniam debitis quaerat officiis quasi cupiditate quo,
+                      quisquam velit, magnam voluptatem repellendus sed eaque
+                    </p>
+
+                    <p style="font-size: larger">80 ₹ / Pc</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- cake product end here-->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="modal fade"
+      id="gallery-modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title my-custom-modal-title">Modal title</h5>
+            <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/1.jpg" class="modal-img" alt="modal img" />
           </div>
         </div>
       </div>
     </div>
-    <!-- Contact End -->
 
-    <!-- Google Map Start -->
-    <div class="container-xxl py-6 px-0 wow fadeInUp" data-wow-delay="0.1s">
-      <!-- <iframe
-        class="w-100 mb-n2"
-        style="height: 450px"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.6930436843027!2d72.51679107607066!3d22.99831241723165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9acd7a655c31%3A0xaf408a6415c731c0!2sSwareet%20Apartments!5e0!3m2!1sen!2sin!4v1721574485030!5m2!1sen!2sin"
-        frameborder="0"
-        allowfullscreen=""
-        aria-hidden="false"
-        tabindex="0"
-      ></iframe> -->
-
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.6930436843027!2d72.51679107607066!3d22.99831241723165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9acd7a655c31%3A0xaf408a6415c731c0!2sSwareet%20Apartments!5e0!3m2!1sen!2sin!4v1721574485030!5m2!1sen!2sin"
-        class="w-100 mb-n2"
-        style="height: 450px"
-        frameborder="0"
-        allowfullscreen=""
-        aria-hidden="false"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </div>
-    <!-- Google Map End -->
+    <!-- Cakes Page End -->
 
     <!-- Footer Start -->
     <div
